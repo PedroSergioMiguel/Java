@@ -11,11 +11,21 @@ public class ArregloNumeros {
             numeros[i] = scanner.nextInt();
         }
 
+        // Encontrar el numero mayor
+        int mayor = numeros[0];
+        for (int i = 1; i < numeros.length; i++){
+            if (numeros[i] > mayor){
+                mayor = numeros[i];
+            }
+        }
+
         //Imprimimos los numeros ingresados
         System.out.println("Los numeros ingresados son: ");
         for ( int i = 0; i< numeros.length; i++){
             System.out.println(numeros[i]);
         }
+
+        System.out.println("El numero mayor es: " + mayor);
     } 
    
 }
