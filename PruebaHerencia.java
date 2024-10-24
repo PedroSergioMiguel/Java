@@ -1,10 +1,15 @@
 public class PruebaHerencia {
    public static void main(String[] args){
-        // Crear un objeto de tipo Perro
-        Perro miPerro = new Perro("Fido");
+        // Crear un objeto de tipo Perro y Gato
+        Animal miPerro = new Perro("Fido");
+        Animal miGato = new Gato("Michi");
 
-        // Llamar a metodo de la clase base y de la clase hijo
-        miPerro.hacerSonido(); // Este metodo ha sido sobreescrito
-        miPerro.moverCola();   // Metodo esoecifico
+        // Array de animales
+        Animal[] animales = {miPerro, miGato};
+
+        // Llamar a hacerSonido() en cada uno, demostrando polimorfismo
+        for (Animal animal : animales) {
+            animal.hacerSonido();
+        }
    } 
 }
