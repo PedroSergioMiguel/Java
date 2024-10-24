@@ -8,6 +8,6 @@ public class Gato extends Animal {
     // Metodo especifico de Gato
     @Override
     public void hacerSonido() {
-        System.out.println("El gato" + getNombre() + " maulla.");
+        System.out.println("El gato " + getNombre() + " maulla.");
     }
 }
